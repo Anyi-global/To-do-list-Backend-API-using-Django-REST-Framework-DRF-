@@ -55,12 +55,12 @@ MIDDLEWARE = [
 ]
 
 # Allow all origins for CORS(for development purposes)
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 # for production setup
 CORS_ALLOWED_ORIGINS = [
     # "http://localhost:5500",      # if serving HTML with Live Server in VSCode
-    "https://todolistorg.vercel.app/",
+    # "https://todolistorg.vercel.app/",
     # "http://localhost:3000",   # if using React development server
 ]
 

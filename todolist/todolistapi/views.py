@@ -12,14 +12,14 @@ from django.http import Http404
 class TaskListCreateAPIView(APIView):
     def get(self, request):
         tasks = Task.objects.all()
-        print(tasks)
+        # print(tasks)
         serializer = TaskSerializer(tasks, many=True)
-        print(serializer)
+        # print(serializer)
         return Response(serializer.data)
     
     def post(self, request):
         serializer = TaskSerializer(data=request.data)
-        print(serializer)
+        # print(serializer)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)

@@ -60,7 +60,7 @@ MIDDLEWARE = [
 # for production setup
 CORS_ALLOWED_ORIGINS = [
     # "http://localhost:5500",      # if serving HTML with Live Server in VSCode
-    "https://todolistorg.vercel.app/",  # if using Vercel for frontend
+    "https://todolistorg.vercel.app",  # if using Vercel for frontend
     # "http://localhost:3000",   # if using React development server
 ]
 
